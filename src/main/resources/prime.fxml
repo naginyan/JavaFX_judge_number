@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="primeController">
+  <children>
+    <Pane layoutX="14.0" layoutY="14.0" prefHeight="372.0" prefWidth="572.0">
+      <children>
+        <Label id="" fx:id="questionLabel" alignment="CENTER" layoutX="188.0" layoutY="107.0" prefHeight="88.0" prefWidth="166.0" text="">
+          <font>
+            <Font size="35.0" />
+          </font>
+        </Label>
+        <Label id="" fx:id="titleLabel" alignment="CENTER" layoutX="118.0" layoutY="26.0" prefHeight="57.0" prefWidth="330.0" text="Prime number ? ">
+          <font>
+            <Font size="40.0" />
+          </font>
+        </Label>
+        <Button fx:id="noButton" layoutX="320.0" layoutY="213.0" mnemonicParsing="false" onAction="#noClick" prefHeight="73.951171875" prefWidth="158.0" text="No">
+          <font>
+            <Font size="30.0" fx:id="x1" />
+          </font>
+        </Button>
+        <Button fx:id="yesButton" font="$x1" layoutX="76.0" layoutY="213.0" mnemonicParsing="false" onAction="#yesClick" prefHeight="73.951171875" prefWidth="158.0" text="Yes" />
+        <Label id="" fx:id="resultLabel" alignment="CENTER" layoutX="19.0" layoutY="316.0" minHeight="44.0" prefHeight="44.0" prefWidth="264.0" text="Your answer is ...?">
+          <font>
+            <Font size="24.0" />
+          </font>
+        </Label>
+        <Button fx:id="exitButton" layoutX="508.0" layoutY="338.0" mnemonicParsing="false" onAction="#exitClick" text="Exit" />
+        <Button fx:id="generateButton" layoutX="423.0" layoutY="108.0" mnemonicParsing="false" onAction="#generateClick" prefHeight="57.0" prefWidth="114.0" text="Generate!" />
+        <Label fx:id="continuousLabel" layoutX="302.0" layoutY="328.0" prefHeight="26.951171875" prefWidth="88.0" text="連続正解数 : " />
+        <Label id="continuousLabel" fx:id="continuousNumberLabel" alignment="CENTER" layoutX="383.0" layoutY="328.0" prefHeight="26.951171875" prefWidth="50.0" text="0" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>
