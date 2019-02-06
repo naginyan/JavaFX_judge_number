@@ -12,7 +12,7 @@ public class primeController implements Initializable {
 
     Random rnd = new Random();
     // baseNumberの数字がランダム生成したい数の範囲
-    private int baseNumber = 10000;
+    private int baseNumber = 300;
     private int number;
     private int judge;
     private int range;
@@ -114,6 +114,10 @@ public class primeController implements Initializable {
             judge = 0;
         }
 
+        if (judgeNumber == 57) {
+            judge = 57;
+        }
+
         // Cheat debug
 
 /*
@@ -132,7 +136,10 @@ public class primeController implements Initializable {
     // ユーザ提示のuserSelect と篩にかけたjudge の数が一致するか判定，結果を表示
     // （次の問題の数字も生成する（ボタン連打すると連続正解数が増える問題が解決できないため）
     private void judgeAnswer(int userSelect) {
-        if (userSelect == judge) {
+        if (judge == 57) {
+            resultLabel.setText("Grothendieck!!");
+
+        } else if (userSelect == judge) {
             resultLabel.setText("Collect!!");
             answerNumber++;
             continuousNumberLabel.setText(answerNumber + "");
